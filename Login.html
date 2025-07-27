@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking System - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="rooms.html">Rooms</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <section class="form-section">
+        <h2>Login</h2>
+        <!-- Traditional login form -->
+        <form action="loginServlet" method="POST">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- OR divider -->
+        <div class="divider">
+            <span>OR</span>
+        </div>
+
+        <!-- Social Login Buttons -->
+        <div class="social-login">
+            <button onclick="loginWithGoogle()" class="google-btn" style="background-color: orange;">Login with Google</button>
+           <br><button onclick="loginWithFacebook()" class="facebook-btn">Login with Facebook</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hotel Booking System. All Rights Reserved.</p>
+    </footer>
+
+    <script src="socialLogin.js"></script> <!-- JavaScript for social login -->
+</body>
+</html>
